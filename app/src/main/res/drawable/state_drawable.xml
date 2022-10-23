@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+StateListDrawables hold multiple drawables which are tied to states of the view.
+Android provides some standard states for views such as pressed, selected.
+Here we see default states and associated drawables.
+-->
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true"
+        android:drawable="@android:drawable/ic_lock_lock"  /> <!-- pressed -->
+    <item
+        android:drawable="@android:drawable/btn_star_big_on" /> <!-- default -->
+</selector>

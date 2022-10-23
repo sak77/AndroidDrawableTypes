@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ProjectionView">
+        <attr name="projection_carplay" format="boolean" />
+        <attr name="projection_aa" format="boolean" />
+        <attr name="projection_phone" format="boolean" />
+    </declare-styleable>
+
+    <!--
+    When trying same with enums instead of booleans, the issue
+    is calling setImageState() requires name of actual attribute to set.
+    But in case of enums, i am not able to set something like this -
+    setImageState(R.attr.Projection.carplay). I only get R.attr.projection.
+    So it does not seem possible to use enum attributes with statelistdrawables.
+    -->
+    <declare-styleable name="MyStyle">
+        <attr name="projection" format="enum">
+            <enum name="carplay" value="0"/>
+            <enum name="androidauto" value="1"/>
+            <enum name="phone" value="2"/>
+        </attr>
+    </declare-styleable>
+
+</resources>

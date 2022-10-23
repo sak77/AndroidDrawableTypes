@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<level-list xmlns:android="http://schemas.android.com/apk/res/android">
+<!--
+Setting the level value of the drawable with setLevel() loads the
+drawable resource in the level list that has a android:maxLevel
+value greater than or equal to the value passed to the method.
+-->
+    <item
+        android:drawable="@android:drawable/btn_star"
+        android:maxLevel="0" />
+    <item
+        android:drawable="@android:drawable/ic_lock_lock"
+        android:maxLevel="1" />
+</level-list>
